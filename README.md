@@ -13,7 +13,7 @@ Make sure you have at least Sails.js version v0.11.0 installed.
 ## Usage
 Like all other Sails.js hooks, this module will be instantiaed automatically when the Sails server lifts. It will configure Sails' default [Captain's Log](https://github.com/balderdashy/captains-log) to use a custom logger.
 
-You can control what logging transports are available by creating a config file called ```config/winstonlogger.js```.
+You can control what logging transports are available by creating a config file called ```config/winstonlog.js```.
 
 The default options are shown below, and you only need to include the keys you want to change in your custom config file.
 
@@ -57,7 +57,7 @@ module.exports.winstonlog = {
 ```
 
 ## License
-Copyright (c) 2015 [Uzair Sajid](http://uzairsajid.com)
+Copyright (c) 2015
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
