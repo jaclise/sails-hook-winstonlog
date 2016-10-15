@@ -1,14 +1,14 @@
 {
-  "name": "sails-hook-log-winston",
+  "name": "sails-hook-winstonlog",
   "version": "0.0.1",
-  "description": "A custom Sails.js hook to add support for Winston logging",
+  "description": "A custom Sails.js hook to add support for Winston logger",
   "main": "lib/logger.js",
   "scripts": {
     "test": "grunt test"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:JohnKimDev/sails-hook-req-validate.git"
+    "url": "git@github.com:JohnKimDev/sails-hook-winstonlog.git"
   },
   "keywords": [
     "sailsjs",
@@ -23,9 +23,9 @@
   "author": "John Kim @johnkimdev",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/JohnKimDev/sails-hook-req-validate/issues"
+    "url": "https://github.com/JohnKimDev/sails-hook-winstonlog/issues"
   },
-  "homepage": "https://github.com/JohnKimDev/sails-hook-req-validate",
+  "homepage": "https://github.com/JohnKimDev/sails-hook-winstonlog",
   "dependencies": {
     "lodash": "^3.9.3",
     "mkdirp": "^0.5.1",

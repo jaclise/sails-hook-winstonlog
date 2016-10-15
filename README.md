@@ -1,6 +1,4 @@
-# Sails Winston Logger
-
-[![Build Status](https://travis-ci.org/UzEE/sails-hook-winston-logger.svg?branch=master)](https://travis-ci.org/UzEE/sails-hook-winston-logger)
+# Sails Winston Log
 
 A custom Sails.js hook to add support for logging using the popular Winston library. Currently, the module comes with out of the box support for the following trasports:
 
@@ -25,7 +23,7 @@ The default options are shown below, and you only need to include the keys you w
 You will have to provide a ```logGroupName``` and a ```logStreamName``` if you are planning to use the ```CloudWatch``` transport. 
 
 ```js
-module.exports.winstonlogger = {
+module.exports.winstonlog = {
 
 	console: {
 		enabled: true,
@@ -38,7 +36,7 @@ module.exports.winstonlogger = {
 	dailyRotate: {
 		enabled: false,
 		level: 'info',
-		filename: path.join(path.dirname(path.resolve('package.json')), 'logs', pkgJSON.name + '.log.'),
+		filename: path.join(path.dirname(path.resolve('package.json')), 'logs','winston.log.'),
 		timestamp: true,
 		colorize: false,
 		maxsize: 1024 * 1024 * 10,
@@ -47,7 +45,7 @@ module.exports.winstonlogger = {
 		depth: 10,
 		tailable: true,
 		zippedArchive: true,
-		datePattern: 'yyyy-MM-dd'
+		datePattern: 'yyyy-MM-dd.log'
 	},
 
 	cloudWatch: {
