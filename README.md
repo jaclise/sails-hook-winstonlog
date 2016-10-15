@@ -9,9 +9,6 @@ A custom Sails.js hook to add support for logging using the popular Winston libr
 ## Installation
 Make sure you have at least Sails.js version v0.11.0 installed.
 
-```ssh
-npm install sails-hook-winstonlogger --save
-```
 
 ## Usage
 Like all other Sails.js hooks, this module will be instantiaed automatically when the Sails server lifts. It will configure Sails' default [Captain's Log](https://github.com/balderdashy/captains-log) to use a custom logger.
