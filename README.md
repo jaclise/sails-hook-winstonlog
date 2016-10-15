@@ -13,7 +13,7 @@ Make sure you have at least Sails.js version v0.11.0 installed.
 
 ##UPDATE
 
-```0.1.0```  Added Moment timestamp format option. Global *enabled* is also added to the configuration.
+```0.1.0```  Added Moment timestamp format option.
 
 ---
 
@@ -28,8 +28,6 @@ You will have to provide a ```logGroupName``` and a ```logStreamName``` if you a
 
 ```js
 module.exports.winstonlog = {
-
-  enabled: true,
 
 	console: {
 		enabled: true,
