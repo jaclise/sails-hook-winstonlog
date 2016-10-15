@@ -9,6 +9,13 @@ A custom Sails.js hook to add support for logging using the popular Winston libr
 ## Installation
 Make sure you have at least Sails.js version v0.11.0 installed.
 
+---
+
+##UPDATE
+
+```0.1.0```  Added Moment timestamp format option. Global *enabled* is also added to the configuration.
+
+---
 
 ## Usage
 Like all other Sails.js hooks, this module will be instantiaed automatically when the Sails server lifts. It will configure Sails' default [Captain's Log](https://github.com/balderdashy/captains-log) to use a custom logger.
@@ -22,10 +29,13 @@ You will have to provide a ```logGroupName``` and a ```logStreamName``` if you a
 ```js
 module.exports.winstonlog = {
 
+  enabled: true,
+
 	console: {
 		enabled: true,
 		level: 'info',
 		timestamp: true,
+		timestampFormat: 'llll',    // http://momentjs.com/docs/#/displaying/
 		colorize: true,
 		prettyPrint: true
 	},
@@ -35,6 +45,7 @@ module.exports.winstonlog = {
 		level: 'info',
 		filename: path.join(path.dirname(path.resolve('package.json')), 'logs','winston.log.'),
 		timestamp: true,
+		timestampFormat: 'llll',    // http://momentjs.com/docs/#/displaying/
 		colorize: false,
 		maxsize: 1024 * 1024 * 10,
 		json: true,
