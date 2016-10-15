@@ -17,7 +17,7 @@ describe('Basic tests ::', function() {
 			hooks: {
 				
 				// Load the hook
-				"sails-hook-winston-logger": require('../lib/logger.js'),
+				"sails-hook-winstonlog": require('../lib/logger.js'),
 				// Skip grunt (unless your hook uses it)
 				"grunt": false
 			},
