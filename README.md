@@ -43,7 +43,7 @@ module.exports.winstonlog = {
 		level: 'info',
 		filename: path.join(path.dirname(path.resolve('package.json')), 'logs','winston.log.'),
 		timestamp: true,
-		timestampFormat: 'llll',    // http://momentjs.com/docs/#/displaying/
+		timestampFormat: 'YYYY-MM-DD HH:mm:ss:SSS',    // http://momentjs.com/docs/#/displaying/
 		colorize: false,
 		maxsize: 1024 * 1024 * 10,
 		json: true,
