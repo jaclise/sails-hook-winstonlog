@@ -1,6 +1,6 @@
 {
   "name": "sails-hook-winstonlog",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A custom Sails.js hook to add support for Winston logger",
   "main": "lib/logger.js",
   "scripts": {
@@ -30,7 +30,7 @@
     "lodash": "^4.16.4",
     "mkdirp": "^0.5.1",
     "moment": "^2.15.1",
-    "winston": "^2.2.0",
+    "winston": "^2.1.1",
     "winston-cloudwatch": "^1.5.0"
   },
   "devDependencies": {
