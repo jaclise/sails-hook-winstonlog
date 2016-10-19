@@ -30,8 +30,8 @@
     "lodash": "^4.16.4",
     "mkdirp": "^0.5.1",
     "moment": "^2.15.1",
-    "winston": "^2.1.1",
-    "winston-cloudwatch": "^1.5.0"
+    "winston": "^1.0.0",
+    "winston-cloudwatch": "^0.3.0"
   },
   "devDependencies": {
     "grunt": "^1.0.1",
